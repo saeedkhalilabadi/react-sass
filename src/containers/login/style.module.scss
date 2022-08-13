@@ -1,0 +1,80 @@
+// imports
+@import "../Assets/styles/mixins"; // mixins
+@import "../Assets/styles/variables"; // variables
+@import "../Assets/fonts/font.css"; // fonts
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  direction: rtl;
+  @include widthAndHeight(100vw, 100vh);
+  //   background-image: url(../../pic/loginBackground.png);
+  //   background-position: center;
+  //   background-attachment: fixed;
+  //   background-repeat: no-repeat;
+  //   background-size: cover;
+  background: url(../Assets/images/loginBackground.png) center / cover no-repeat
+    fixed; // shortcut
+  @include flexbox;
+}
+.login-form-container {
+  font-family: $fontFamily;
+  background-image: linear-gradient(to bottom, $gradient-stops);
+  background-repeat: no-repeat;
+  @include widthAndHeight(320px, 557px);
+  padding: 32px 40px;
+  border-radius: $mainSize;
+}
+.header-login-form {
+  text-align: center;
+  img {
+    margin: 1rem auto;
+    width: 6rem;
+  }
+  p {
+    font-size: 0.75rem;
+    line-height: $mainSize;
+    color: $secondaryWhite;
+  }
+}
+.body-login-form {
+  .login-text {
+    margin-right: 0.5rem;
+    margin-top: 2rem;
+    font-weight: 700;
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    color: $secondaryWhite;
+  }
+  input {
+    width: 100%;
+  }
+}
+.btn {
+  margin-top: 0.5rem;
+  width: 100%;
+  outline: none;
+  border: none;
+  border-radius: 4px;
+  background-color: $primaryColor;
+  height: 36px;
+  padding: 0 16px;
+  font-size: 0.875rem;
+  color: $mainWhite;
+  font-weight: 700 !important;
+  box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14),
+    0 1px 5px 0 rgba(0, 0, 0, 0.12);
+  cursor: pointer;
+  font-family: $fontFamily;
+  letter-spacing: 0.0892857143em;
+  margin-top:1rem ;
+}
+.css-tchvdy-MuiFormControlLabel-root{
+  margin: 0 !important;
+}
+.css-16fsyax-MuiFormControlLabel-root{
+  margin-right: 0 !important;
+
+}

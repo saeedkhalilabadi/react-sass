@@ -4,10 +4,12 @@ $primary40: #01b182;
 $primary70: #252526;
 $primary90: #141319;
 
+
 $secondrady10: #85dbc4;//selected Font
+$secondrady20:#484848;
 
-
-$tertiary10: rgb(133, 219, 196);
+$tertiary10: #85dbc4;
+$tertiary30: #76bba9;
 
 
 $error10: #410e0b;
@@ -20,3 +22,32 @@ $error90: #f9dedc;
 $d-font-color: rgba(248, 248, 248, 1);;
 $l-font-color: hsla(0,0%,100%,.6);
 $f-font-color: #85dbc4;
+
+
+$primaryColor: #01b182;
+$secondaryColor: hsla(0, 0%, 100%, 0.7);
+$mainWhite: #fff;
+$mainBlack: #222;
+$mainGray: #343434;
+$mainSize: 1.5rem;
+$fontFamily: IRANSans;
+$gradient-from: #3c3c3c;
+$gradient-to: #252526;
+$gradient-stops: $gradient-from, $gradient-to;
+$text-opacity: 1;
+
+$primaryColor: #01b182;
+$secondaryColor: hsla(0, 0%, 100%, 0.7);
+$mainWhite: #fff;
+$mainBlack: #222;
+$mainGray: #343434;
+$primary90: #141319;
+$gradient-from: #3c3c3c;
+$gradient-to: #252526;
+$gradient-stops: $gradient-from, $gradient-to;
+$text-opacity: 1;
+$secondaryWhite: rgba(248, 248, 248, $text-opacity); 
+
+$mainSize: 1.5rem;
+$smallSize: 0.725rem;
+$fontFamily: IRANSans;

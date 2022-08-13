@@ -1,0 +1,52 @@
+@import "../../styles/mixins"; // mixins
+@import "../../styles/variables"; // variables
+
+.css-1s2u09g-control {
+  background-color: $gradient-to !important;
+  border: none !important;
+
+  .css-tj5bde-Svg {
+    transform: rotate(360deg);
+  }
+} // for background input
+.css-1pahdxg-control,
+.css-1pahdxg-control:hover {
+  background-color: $gradient-to !important;
+  color: $primaryColor !important;
+  border: none !important;
+  box-shadow: none !important;
+} // for during not active on it and hover
+.css-qc6sy-singleValue {
+  color: #85dbc4 !important;
+} // for text in input
+.css-1okebmr-indicatorSeparator {
+  display: none;
+} // for Line between icons
+.css-tlfecz-indicatorContainer,
+.css-1gtu0rj-indicatorContainer {
+  padding-right: 0 !important;
+} // for container of icons
+.css-tlfecz-indicatorContainer:hover,
+.css-1gtu0rj-indicatorContainer:hover {
+  color: #fff !important;
+} // for hover of icons
+.css-6j8wv5-Input {
+  color: #fff !important;
+} // for selector input
+.css-1pndypt-Input {
+  color: #cacaca !important;
+} // for Text written by the user
+.css-1gtu0rj-indicatorContainer {
+  color: hsl(0, 0%, 80%) !important;
+} // for during active input { icons }
+.css-tj5bde-Svg {
+  transform: rotate(180deg);
+} // for rotate of icon flash
+
+.css-26l3qy-menu {
+  color: $mainBlack;
+} // for text of option
+
+.css-14el2xx-placeholder {
+  color: #cacaca !important;
+} // for placeholder

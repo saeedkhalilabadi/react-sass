@@ -1,0 +1,30 @@
+@import "../../Assets/styles/mixins"; // mixins
+@import "../../Assets/styles/variables"; // variables
+@import "../../Assets/fonts/font.css"; // fonts
+
+.bottom-header {
+  direction: rtl;
+  display: flex;
+  justify-content: center;
+  flex: 1 1 auto;
+  max-width: 100%;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  padding-bottom: 1rem;
+  padding-top: 0.75rem;
+  color: #989898;
+  background-color: #2c2c2c;
+  font-family: $fontFamily;
+  img {
+    width: 1.25rem;
+    height: 1.25rem;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    border-style: none;
+    max-width: 100%;
+  }
+  p {
+    padding-top: 0.125rem;
+    margin: 0;
+  }
+}

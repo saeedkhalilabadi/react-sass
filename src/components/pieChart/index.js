@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from "react";
 
 import { Pie, G2 } from "@ant-design/plots";
+import styles from "./index.module.scss";
 
-export default function PieChart({ data }) {
+export default function PieChart({ title, data }) {
   const G = G2.getEngine("canvas");
 
   const cfg = {
@@ -25,7 +26,7 @@ export default function PieChart({ data }) {
             width: 40,
             height: 50,
             r: 5,
-            fill: mappingData.color,
+            fill: "#fff",
           },
         });
         group.addShape({
@@ -34,7 +35,7 @@ export default function PieChart({ data }) {
             x: 10,
             y: 8,
             text: `${data.type}`,
-            fill: mappingData.color,
+            fill: "#fff",
           },
         });
         group.addShape({
@@ -43,7 +44,7 @@ export default function PieChart({ data }) {
             x: 0,
             y: 25,
             text: `${data.value}个 ${data.percent * 100}%`,
-            fill: "rgba(0, 0, 0, 0.65)",
+            fill: "#fff",
             fontWeight: 700,
           },
         });
@@ -60,5 +61,16 @@ export default function PieChart({ data }) {
     ],
   };
   const config = cfg;
-  return <Pie {...config} />;
+  return (
+   
+    <div className={styles["chartSetting"]}>
+      <div className="title">{title}</div>
+
+     
+      <div>
+      <Pie {...config} />
+      </div>
+    </div>
+
+  );
 }

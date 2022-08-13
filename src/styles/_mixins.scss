@@ -1,5 +1,47 @@
+
+@use './variables' as variables;
+
 @mixin rotate90 {
   transform: {
     rotate: "90deg";
   }
+}
+
+@mixin selectedMenuItem {
+
+  font-weight: bold !important;
+  font-size: 0.825rem !important;
+  color: #fff !important;
+  
+}
+@mixin unSelectedMenuItem {
+
+  font-weight: bold !important;
+  font-size: 0.825rem !important;
+  color: #ffffff99 !important;
+}
+@mixin selectedTabItem {
+  background-color:variables.$secondrady20 !important ;
+  font-weight: bold !important;
+  font-size: 0.825rem !important;
+  color: #fff!important;
+}
+@mixin unSelectedTabItem {
+  background-color:variables.$secondrady20 !important ;
+  font-weight: bold !important;
+  font-size: 0.825rem !important;
+  color: #ffffff99 !important;
+}
+@mixin widthAndHeight($width, $height) {
+  width: $width;
+  height: $height;
+}
+@mixin flexbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@mixin iconStyle {
+  font-size: 1rem;
+  vertical-align: middle;
 }
