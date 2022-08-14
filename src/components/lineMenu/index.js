@@ -51,6 +51,7 @@ export default function LineMenu({ onGetData }) {
       });
   }
   async function getLineData(params) {
+    console.log("======================>", params);
     let headers = await GetHeaders();
     let queryData = await ObjectToQueryString(params);
     Promise.all([
@@ -128,12 +129,20 @@ export default function LineMenu({ onGetData }) {
             getLineData({
               startHisDate:
                 String(selectedDayStart.year) +
-                String(selectedDayStart.month) +
-                String(selectedDayStart.day),
+                (String(selectedDayStart.month).length < 2
+                  ? "0" + String(selectedDayStart.month)
+                  : String(selectedDayStart.month)) +
+                (String(selectedDayStart.day).length < 2
+                  ? "0" + String(selectedDayStart.day)
+                  : String(selectedDayStart.day)),
               endHisDate:
                 String(selectedDayEnd.year) +
-                String(selectedDayEnd.month) +
-                String(selectedDayEnd.day),
+                (String(selectedDayEnd.month).length < 2
+                  ? "0" + String(selectedDayEnd.month)
+                  : String(selectedDayEnd.month)) +
+                (String(selectedDayEnd.day).length < 2
+                  ? "0" + String(selectedDayEnd.day)
+                  : String(selectedDayEnd.day)),
               lineThreeDigitCode: selectedLine.value,
             })
           }

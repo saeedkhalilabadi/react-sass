@@ -13,7 +13,6 @@ import RodChart from "../../components/rodChart/index";
 import PieChart from "../../components/pieChart/index";
 import styles from "./index.module.scss";
 
-
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
 
@@ -98,22 +97,43 @@ export default function LineData(props) {
     if (!Array.isArray(params) || params.length === 0) return [];
     let dayData = [];
     for (let i = 0; i < params.length; i++) {
-      if (params[i].key === "Sunday")
-        dayData[1] = { type: "یکشنبه", value: params[i].value };
-      if (params[i].key === "Thursday")
-        dayData[5] = { type: "پنج شنبه", value: params[i].value };
-      if (params[i].key === "Wednesday")
-        dayData[4] = { type: "چهارشنبه", value: params[i].value };
-      if (params[i].key === "Saturday")
-        dayData[0] = { type: "شنبه", value: params[i].value };
-      if (params[i].key === "Friday")
-        dayData[6] = { type: "جمعه", value: params[i].value };
-      if (params[i].key === "Monday")
-        dayData[2] = { type: "دوشنبه", value: params[i].value };
-      if (params[i].key === "Tuesday")
-        dayData[3] = { type: "سه شنبه", value: params[i].value };
+      if (params[i].Key === "Sunday")
+        dayData[1] = {
+          type: "یکشنبه",
+          value: params[i].Value,
+        };
+      if (params[i].Key === "Thursday")
+        dayData[5] = {
+          type: "پنج شنبه",
+          value: params[i].Value,
+        };
+      if (params[i].Key === "Wednesday")
+        dayData[4] = {
+          type: "چهارشنبه",
+          value: params[i].Value,
+        };
+      if (params[i].Key === "Saturday")
+        dayData[0] = {
+          type: "شنبه",
+          value: params[i].Value,
+        };
+      if (params[i].Key === "Friday")
+        dayData[6] = {
+          type: "جمعه",
+          value: params[i].Value,
+        };
+      if (params[i].Key === "Monday")
+        dayData[2] = {
+          type: "دوشنبه",
+          value: params[i].Value,
+        };
+      if (params[i].Key === "Tuesday")
+        dayData[3] = {
+          type: "سه شنبه",
+          value: params[i].Value,
+        };
     }
-    console.log("dayData------------------>", dayData);
+
     return dayData;
   };
 

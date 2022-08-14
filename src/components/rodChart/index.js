@@ -41,6 +41,7 @@ export default function RodChart({ data, title, yTitle }) {
     },
     yAxis: {
       label: {
+        formatter: (val) => (val >= 1000 ? `${val / 1000}K` : `${val}`),
         style: {
           fill: "#f8f8f8",
           opacity: 1,
