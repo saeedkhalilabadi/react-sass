@@ -1,13 +1,22 @@
+
+@font-face {
+  font-family: "IRANSanse";
+  src: url("./styles/fonts/IRANSansXFaNum-Regular.woff") format("woff");
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: "IRANSanse" !important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+row{
+  margin: 0px !important;
+}
+col{
+  margin: 0px !important;
+}
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: "IRANSanse" !important;
 }

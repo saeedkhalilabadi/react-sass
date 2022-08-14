@@ -1,0 +1,45 @@
+@use "../../styles/variables" as global;
+
+.containers {
+  font-family: "IRANSanse" !important;
+  background-color: global.$primary10;
+  width: 100%;
+  height: 100%;
+  min-height: 200px;
+  border-radius: 12px;
+  padding-right: 1.5rem;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  text-align: right; 
+  color: global.$d-font-color;  
+  margin: 2px !important; 
+}
+.icons {
+  font-size: 28px;
+  color: global.$secondrady10;
+  display: inline-block;
+}
+.section {
+  justify-content: right;
+  width: fit-content;
+  display: inline-block;
+}
+.title {
+  margin-right: 8px;
+  font-size: 0.875rem;
+  font-weight: 700;
+ 
+  display: inline-block;
+}
+.value {
+  font-size: 0.875rem;
+  font-weight: 700;  
+  display: inline-block;
+}
+.unit {
+  font-size: 0.775rem;
+  font-weight: 100;
+  margin-right: 8px;
+  color: global.$l-font-color; 
+  display: inline-block;
+}

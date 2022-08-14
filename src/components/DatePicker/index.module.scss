@@ -1,0 +1,56 @@
+@import "../../styles/mixins"; // mixins
+@import "../../styles/variables"; // variables
+
+.back{
+    position: fixed;
+   
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    text-align: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.42);
+    z-index: 1000000000;
+
+}
+.main{
+position: relative;
+width: fit-content;
+margin: auto;
+margin-top: 10%;
+background-color: #fff;
+
+
+}
+.header{
+    background-color: #01b182;
+    padding: 25px 0px;
+    font-size: 20px;
+
+}
+.footer{
+    display: flex;
+background-color: #fff;
+padding: 10px 10px;
+color: #01b182;
+justify-content: space-around;
+
+}
+.button{
+    
+    color: #01b182;
+    width: 100px;
+}
+
+.calendar {
+    background-color: rgb(37, 37, 38) !important;
+    width: 6.7rem !important;
+    border-style: none !important;
+    color: $secondaryWhite !important;
+    padding: 0.25rem !important;
+    padding-right: 0.5rem !important;
+    border-radius: 0.25rem !important;
+    cursor: pointer !important;
+    height: 29px !important;
+  }

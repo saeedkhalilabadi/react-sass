@@ -1,0 +1,41 @@
+@use '../../styles/variables' as variabals;
+@use '../../styles/mixins' as mixins;
+
+
+
+
+
+
+.selectedMenuItem{
+    @include mixins.selectedMenuItem;
+    margin: auto;
+    font-family: 'IRANSans'!important;
+    
+}
+.unSelectedMenuItem{
+@include mixins.unSelectedMenuItem;
+margin: auto;
+    font-family: 'IRANSans'!important;
+}
+.selectedTabItem{
+@include mixins.selectedMenuItem;  
+margin: auto;
+    font-family: 'IRANSans'!important;
+    
+}
+.unSelectedTabItem{
+    @include mixins.unSelectedMenuItem;
+    margin: auto;
+    font-family: 'IRANSans'!important;
+  
+}
+
+.Row>*{
+    margin: 0px !important;
+    padding: 0px!important;
+    
+}
+.ColItem{
+    padding: 4px !important;
+    
+}

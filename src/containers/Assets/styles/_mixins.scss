@@ -1,0 +1,9 @@
+@mixin widthAndHeight($width, $height) {
+  width: $width;
+  height: $height;
+}
+@mixin flexbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

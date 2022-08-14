@@ -1,0 +1,25 @@
+@use "./variables" as valiables;
+
+body {
+  font-family: "IRANSanse" !important;
+  
+  background-color: valiables.$primary70 !important;
+  color: valiables.$d-font-color !important;
+  direction: rtl;
+}
+.title {
+  font-family: 'IRANSans';
+  background-color: valiables.$primary70;
+  margin: auto;
+  margin-top: 30px;
+  margin-bottom: 50px;
+  color: valiables.$d-font-color;
+  text-align: center;
+  padding-top:0.25rem ;
+  padding-bottom:0.25rem ;
+  font-size: 0.875rem;
+  font-weight: 700;
+  border-radius: 5px;
+  width: 100% !important;
+}
+

@@ -1,0 +1,22 @@
+
+  .loadingBack{
+
+    background-color: rgba(49, 49, 49, 0.8);
+    position: absolute;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    height: 100%;
+    width: 100%;
+    z-index: 999;
+
+
+  }
+  .loadingmain{
+    margin: auto;
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    top: 40%;
+    right: 38%;
+  }
